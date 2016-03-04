@@ -1,0 +1,10 @@
+maxgputemp 85
+stratumproxy enabled
+proxywallet 0x5a9fc9284b91a22780d796ff385cde69666c5d85
+proxypool1 us1.ethpool.org:3333
+proxypool2 eu1.ethpool.org:3333
+flags --cl-global-work 16384 --farm-recheck 200
+globalfan 70
+
+cor 194107 1155 1050 1155 1155 1155 1155
+cor fb200f 1100 1100 1040 1040
