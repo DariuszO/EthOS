@@ -6,5 +6,5 @@ proxypool2 eu1.ethpool.org:3333
 flags --cl-global-work 16384 --farm-recheck 200
 globalfan 70
 
-cor 194107 1155 1050 1155 1155 1155 1155
+cor 194107 1154 1050 1154 1154 1154 1154
 cor fb200f 1100 1100 1040 1040
