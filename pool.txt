@@ -18,7 +18,7 @@ maxgputemp 89
 flags --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
 
 #101 280x x5@ 180W/ea + 280 x1@ 160W // GPU1 UV seem, prone to crashing under heat
-cor 194107 1050 1000 1040 1050 1050 1000
+cor 194107 1025 1000 1040 1050 1050 1000
 mem 194107 1500 1500 1500 1500 1500 1250
 #fan 194107 92 92 92 92 92 92
 pwr 194107 20 20 20 20 20 20
