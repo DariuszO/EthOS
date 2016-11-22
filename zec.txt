@@ -1,4 +1,4 @@
-#echo -n "http://vi.zenithnet.org/ZEC.txt" > /home/ethos/remote.conf && r
+#echo -n "https://raw.githubusercontent.com/Virosa/EthOS/master/zec.txt" > /home/ethos/remote.conf && r
 #disallow && minestop && sleep 1 && ethos-update && sleep 5 && allow && r
 
 custompanel virosa420137
