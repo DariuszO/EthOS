@@ -1,0 +1,161 @@
+#echo -n "http://vi.zenithnet.org/ZEC.txt" > /home/ethos/remote.conf && r
+#disallow && minestop && sleep 1 && ethos-update && sleep 5 && allow && r
+
+custompanel virosa420137
+
+autoreboot 2
+
+#globalbranch development
+#branch eb19aa development
+
+#NICEHASH
+stratumproxy nicehash
+proxywallet 15qpQXHz9mVcJmnzd5YEsxKz9JkdNQSLJQ
+proxypool1 equihash.usa.nicehash.com:3357
+proxypool2 equihash.eu.nicehash.com:3357
+
+#ZCASH
+#proxywallet t1e2Ev2vnRWGFgXc8362g2ijpoaLdpUDPjz
+#proxypool1 us1-zcash.flypool.org:3333
+#proxypool2 eu1-zcash.flypool.org:3333
+
+#globalminer optiminer-zcash
+
+## Claymore ETH NH
+#claymore=proxypool1 stratum+tcp://daggerhashimoto.usa.nicehash.com:3353
+#claymore=proxypool2 stratum+tcp://daggerhashimoto.eu.nicehash.com:3353
+#claymore=proxywallet 15qpQXHz9mVcJmnzd5YEsxKz9JkdNQSLJQ
+#claymore=poolpass1 x
+#claymore=poolpass2 x
+
+
+## Claymore ETH ethpool
+claymore=proxypool1 us1.ethpool.org:3333
+claymore=proxypool2 us2.ethpool.org:3333
+claymore=proxywallet 0x5a9fc9284b91a22780d796ff385cde69666c5d85
+claymore=poolpass1 x
+claymore=poolpass2 x
+
+globalfan 75
+maxgputemp 89
+flags --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
+
+#101 280x x5@ 180W/ea + 280 x1@ 160W // GPU1 UV seem, prone to crashing under heat
+cor 194107 1025 1000 1020 1045 1050 975
+mem 194107 1500 1500 1500 1500 1500 1250
+fan 194107 80 85 92 80 80 80
+pwr 194107 20 20 20 20 20 20
+loc 194107 101
+miner 194107 optiminer-zcash
+
+#102
+cor 193fae 1000 1000 975 975 975 975
+mem 193fae 1500 1500 1250 1250 1250 1250
+fan 193fae 0 0 90 0 0 0
+loc 193fae 102
+miner 193fae optiminer-zcash
+
+#103
+cor 047c5f 1100 1100 1100 1100
+mem 047c5f 1500 1500 1500 1500 1500 1500 
+#fan 047c5f 85 95 85 85 85 85
+loc 047c5f 103
+miner 047c5f optiminer-zcash
+
+#104 480NT
+cor 874af0 1190 1190 1190 1190 1180 1190
+mem 874af0 2100 2100 2100 2100 2100 2100
+#fan 874af0 75 75 75 75 75 75
+#flg 874af0 --cl-global-work 16384 --farm-recheck 1000
+pwr 874af0 7 7 7 7 7 7
+loc 874af0 104
+driver 874af0 amdgpu
+miner 874af0 optiminer-zcash
+
+#110
+#cor eb19aa 1200
+#mem eb19aa 2100
+fan eb19aa 40
+#pwr eb19aa 4
+3flg eb19aa --cl-local-work 256 --cl-global-work 16384 --farm-recheck 1000
+loc eb19aa 110
+#driver eb19aa amdgpu
+miner eb19aa optiminer-zcash
+
+#201
+cor 1946a2 1110 1120 1075 1120 1120 1120
+mem 1946a2 1550 1575 1525 1575 1575 1575
+#fan 1946a2 80 80 80 80 80 80
+loc 1946a2 201
+driver 1946a2 fglrx
+miner 1946a2 optiminer-zcash
+
+#202 760W on 750G2
+cor fb200f 1100 1100 1100 1100 1100 1100
+mem fb200f 1550 1550 1550 1550 1550 1550
+fan fb200f 0 0 0 0 0 80
+loc fb200f 202
+miner fb200f optiminer-zcash
+
+#203
+cor 302e95 1075 1080 1055
+mem 302e95 1250 1250 1250
+#fan 302e95 60 60 60
+pwr 302e95 50 50 50
+loc 302e95 203
+miner 302e95 optiminer-zcash
+
+#204 480 RIG
+cor 9dd995 1190 1190 1240 1240 1160 1200
+mem 9dd995 2150 2150 2100 2125 1750 1750
+pwr 9dd995 7 7 7 7 7 7
+#fan 9dd995 80 80 80 80 80 80
+flg 9dd995 --cl-global-work 16384 --farm-recheck 1000
+#mxt 9dd995 46 48 47 48 49 56
+loc 9dd995 204
+driver 9dd995 amdgpu
+miner 9dd995 optiminer-zcash
+
+#205 480 RIG
+cor 36eb44 1160 1190 1180 1180 1170 1190
+mem 36eb44 2100 2100 2100 2100 2100 2100
+pwr 36eb44 7 7 7 7 7 7
+#fan 36eb44 60 60 60 60 80 80
+loc 36eb44 205
+driver 36eb44 amdgpu
+miner 36eb44 optiminer-zcash
+
+#206 480 RIG
+cor 98b98b 1190 1180 1160 1160 1170 1190
+mem 98b98b 2100 2100 2100 2100 2100 2100
+pwr 98b98b 7 7 7 7 7 7
+#fan 98b98b 70 70 70 70 70 70
+loc 98b98b 206
+miner 98b98b optiminer-zcash
+driver 98b98b amdgpu
+#driverless 98b98b enabled
+
+#207 380x/380
+cor 9de955 890 890 890 890 1000 1000
+mem 9de955 1575 1575 1600 1575 1600 1600
+#fan 9de955 0 0 0 0 0 0
+flg 9de955 --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
+loc 9de955 207
+#driver 9de955 fglrx
+miner 9de955 optiminer-zcash
+
+#208
+cor 0ce6ca 0 0 1000 1000 0 900
+mem 0ce6ca 1600 1500 1250 1250 1500 1500
+#fan 0ce6ca 70 50 50 70 70 100
+#flg
+loc 0ce6ca 208
+miner 0ce6ca optiminer-zcash
+
+#209
+cor fb20c3 1000 1000 1000 1000 1000 1000
+mem fb20c3 1500 1500 1500 1500 1500 1250
+#fan fb20c3 55 45 0
+#flg fb20c3 --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
+loc fb20c3 209
+miner fb20c3 optiminer-zcash
