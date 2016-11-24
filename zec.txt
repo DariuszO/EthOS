@@ -153,8 +153,8 @@ loc 0ce6ca 208
 miner 0ce6ca optiminer-zcash
 
 #209
-cor fb20c3 1000 1000 1000 1000 1000 1000
-mem fb20c3 1500 1500 1500 1500 1500 1250
+cor fb20c3 0 1000 1000 0 1000 1000
+mem fb20c3 0 1500 1500 0 1500 1250
 #fan fb20c3 55 45 0
 #flg fb20c3 --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
 loc fb20c3 209
