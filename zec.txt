@@ -137,7 +137,7 @@ driver 98b98b amdgpu
 
 #207 380x/380
 cor 9de955 890 890 890 890 890 890
-mem 9de955 1600 1600 1600 1600 1600 1600
+mem 9de955 1600 1600 1600 1600 1600 1575
 #fan 9de955 0 0 0 0 0 0
 flg 9de955 --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
 loc 9de955 207
