@@ -136,7 +136,7 @@ driver 98b98b amdgpu
 #driverless 98b98b enabled
 
 #207 380x/380
-cor 9de955 890 925 925 925 950 950
+cor 9de955 890 900 900 900 900 900
 mem 9de955 1600 1600 1600 1600 1600 1600
 #fan 9de955 0 0 0 0 0 0
 flg 9de955 --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
