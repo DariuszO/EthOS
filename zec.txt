@@ -36,7 +36,7 @@ claymore=proxywallet 0x5a9fc9284b91a22780d796ff385cde69666c5d85
 claymore=poolpass1 x
 claymore=poolpass2 x
 
-globalfan 75
+globalfan 90
 maxgputemp 89
 flags --cl-local-work 256 --cl-global-work 8192 --farm-recheck 1000
 
